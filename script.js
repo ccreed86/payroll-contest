@@ -11,14 +11,14 @@ const collectEmployees = function() {
   while(letsKeepGoing) {
     const firstName = prompt("Enter the employee's fist name:");
     const lastName = prompt("Enter the employee's last name:");
-    const salary = prompt("Enter the employee's salary:");
+    let salary = prompt("Enter the employee's salary:");
 
 
     /*if (isNaN(salary)) {
         alert ('Not a Number!');
     }*/
 
-  // if (isNaN(salary)) { salary = "0"}
+   if (isNaN(salary)) { salary = "0"}
 
   const employee = {
     firstName: firstName,
